@@ -55,12 +55,12 @@
 
 ### Project Completion Summary
 
-✅ **All core implementation complete**
+**All core implementation complete**
 
 - Phase 1: Reliable file transfer over UDP with SOCK_RAW
 - Phase 2: Secure file transfer with encryption, authentication, and attack protection
 
-✅ **Ready for final demo and submission**
+  **Ready for final demo and submission**
 
 - Demo dates: April 22, 2026
 - Final submission: April 22, 2026, 11:59 PM PDT
@@ -71,7 +71,7 @@
 
 All Phase 1 modules are implemented: client, server, raw socket wrapper, sender, receiver, file handler, and stats. Server refactored to use RawSocket class. Client handles cumulative ACKs and duplicate/out-of-order packets. Performance improvements: delayed ACK optimization (ACK every 16 packets or after 10ms delay). Tested with files up to 1GB with md5sum verification.
 
-## Phase 2 — Complete ✅
+## Phase 2 — Complete
 
 ### Completed Features
 
@@ -96,12 +96,10 @@ All Phase 1 modules are implemented: client, server, raw socket wrapper, sender,
 
 **All Phase 2 security features are fully implemented, integrated, and tested:**
 
-- ✅ End-to-end encryption with AES-GCM AEAD
-- ✅ Secure handshake with HMAC-based key exchange
-- ✅ Replay attack protection with sliding-window detection
-- ✅ File integrity verification with SHA-256
-- ✅ Attack detection and reporting (tamper, replay, inject)
-- ✅ Comprehensive security statistics and transfer reports
-- ✅ Complete test suite with 108 passing tests
-
-**Project ready for final demo (April 22, 2026) and submission (April 22, 2026)**
+- End-to-end encryption with AES-GCM AEAD
+- Secure handshake with HMAC-based key exchange
+- Replay attack protection with sliding-window detection
+- File integrity verification with SHA-256
+- Attack detection and reporting (tamper, replay, inject)
+- Comprehensive security statistics and transfer reports
+- Complete test suite with 108 passing tests

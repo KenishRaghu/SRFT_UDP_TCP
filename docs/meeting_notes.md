@@ -32,7 +32,7 @@
 - Hui is responsible for all project documentation throughout the project, including:
   - Meeting notes
   - Project progress log
-  - Test screenshots and records
+- Zeyi is responsible for test screenshots and records for phase 1
 - Exception: During Phase 2, when roles swap, the testing group (Group A) will handle test-related documentation
 
 ---
@@ -70,7 +70,14 @@
 - Test records and report needed for phase1
 - Decrese transfer time locally and on cloud
 
-## Meeting 7 - 19th April, 2026
+## Meeting 7 - 10th April, 2026
+
+### Agenda
+
+- Test records and report for phase2
+- Decrese transfer time on cloud for different file sizes
+
+## Meeting 8 - 19th April, 2026
 
 ### Agenda
 
