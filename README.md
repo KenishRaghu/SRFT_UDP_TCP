@@ -166,9 +166,9 @@ All tests were conducted on AWS EC2 instances (free tier) with packet loss simul
 
 ## Security tests using 1 mb file
 
-| Test Case                 | Handshake | AEAD Failures  | Replay Drops  | SHA-256 Match  | Result |
-|---------------------------|-----------|----------------|---------------|----------------|--------|
-| Secure transfer baseline  | Success   | 0              | 0             | Yes            | Passed |
+| Test Case                 | Handshake | AEAD Failures  | Replay Drops  | SHA-256 Match  | Result | Time     |
+|---------------------------|-----------|----------------|---------------|----------------|--------|----------|
+| Secure transfer baseline  | Success   | 0              | 0             | Yes            | Passed | 00:00:01 |
 | Wrong PSK                 | Failed    | N/A            | N/A           | N/A            | Passed |
 | Tampered packet           | Success   | 1              | 0             | Yes            | Passed |
 | Replay attack             | Success   | 0              | 1             | Yes            | Passed |
@@ -313,6 +313,29 @@ During development, AI assistant tools (Claude Code) were used for:
 - AWS EC2 Documentation - Network Configuration and `tc netem` Usage
 
 ---
+
+## Security tests using 100 mb file
+
+| Test Case                 | Handshake | AEAD Failures  | Replay Drops  | SHA-256 Match  | Result |   Time   |
+|---------------------------|-----------|----------------|---------------|----------------|--------|----------|
+| Secure transfer baseline  | Success   | 0              | 0             | Yes            | Passed | 00:00:19 |
+| Wrong PSK                 | Failed    | N/A            | N/A           | N/A            | Passed |
+| Tampered packet           | Success   | 1              | 0             | Yes            | Passed |
+| Replay attack             | Success   | 0              | 1             | Yes            | Passed |
+| Forged packet injection   | Success   | 1              | 0             | Yes            | Passed |
+
+
+## Security tests using 500 mb file
+
+| Test Case                 | Handshake | AEAD Failures  | Replay Drops  | SHA-256 Match  | Result |  Time    |
+|---------------------------|-----------|----------------|---------------|----------------|--------|----------|
+| Secure transfer baseline  | Success   | 0              | 0             | Yes            | Passed | 00:01:36 |
+| Wrong PSK                 | Failed    | N/A            | N/A           | N/A            | Passed | 
+| Tampered packet           | Success   | 1              | 0             | Yes            | Passed | 
+| Replay attack             | Success   | 0              | 1             | Yes            | Passed |
+| Forged packet injection   | Success   | 1              | 0             | Yes            | Passed |
+
+
 
 ## Project structure
 
